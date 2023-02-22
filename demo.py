@@ -23,7 +23,7 @@ def every_one_minutes():
         for line in tasks:
             line2 = line.replace('\n','').split(', ')
             key = int(line2[0])
-            tasksdict[key] = int(line2[1])     
+            tasksdict[key] = int(line2[1])
 
     idtaskslistold = huey.get('test1')
     print(f'Список задач был: {idtaskslistold}')
